@@ -77,10 +77,10 @@ a {
     display: flex;
     align-items: center;
 }
-.hero .img-block,
+/* .hero .img-block,
 .hero .info {
-    /* background-color: yellow; */
-}
+    background-color: yellow;
+} */
 .hero .img-block {
     position: relative;
 }
@@ -376,9 +376,8 @@ a {
     justify-content: center;
     align-items: center;
 }
-.courses .row2 a:hover{
-    background: #FFB900;
-
+.courses .row2 a:hover {
+    background: #ffb900;
 }
 .peter {
     width: 1440px;
@@ -565,7 +564,7 @@ a {
 .Blog {
     width: 1440px;
     height: 878px;
-    background: #ddc06f;
+    /* background: #ddc06f; */
     margin: 200px auto 0;
     padding: 96px 135px;
 }
@@ -667,5 +666,99 @@ a {
 .Blog .row .block a:hover {
     background: #ffb900;
 }
+.Blog .dots {
+    display: flex;
+    margin: 38px auto 0;
+    justify-content: center;
+    gap: 6px;
+}
 .Blog .dot {
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Blog .dots .dot:nth-child(2) {
+    background: #ffb900;
+}
+
+.Blog .dot:hover {
+    background: #ffb900;
+}
+/* footer------------------------------------------ */
+.footer {
+    width: 1440px;
+    height: 428px;
+    background: #2e2100;
+    margin: 0 auto;
+    padding: 96px 135px 28px;
+}
+.footer .footer-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer .column1 img {
+    width: 85px;
+    height: 34px;
+}
+/* phaanf chung--------------=----------------- */
+.footer .footer-row h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+}
+.footer p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #bfbcb2;
+    margin-top: 12px;
+}
+.footer .footer-row span {
+    display: inline-block;
+    width: 130px;
+    height: 1px;
+    background: #535353;
+    margin-top: 14px;
+}
+/* phan rieng---------------------------------------- */
+.footer .column1 p {
+    width: 267px;
+    height: 78px;
+    margin-top: 18px;
+}
+.footer .column1 .social {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+    color: #ffffff;
+}
+.footer .column2 {
+    margin-left: 145px;
+}
+.footer .column3 {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.footer .column2 p:nth-child(3) {
+    margin-top: 28px;
+}
+.footer .line {
+    display: inline-block;
+    width: 1170px;
+    height: 1px;
+    background: #535353;
+    margin-top: 38px;
+}
+.footer .copy-right {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #807d74;
+    margin-top: 28px;
 }
