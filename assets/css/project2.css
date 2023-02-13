@@ -140,13 +140,13 @@ a {
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
-    color: #171100;
+    color: var(--primary-color);
 }
 .hero .info h1 {
     font-weight: 700;
     font-size: 58px;
     line-height: 68px;
-    color: #171100;
+    color: var(--primary-color);
 }
 
 /* info */
@@ -162,7 +162,7 @@ a {
     font-size: 58px;
     line-height: 68px;
     letter-spacing: -0.02em;
-    color: #171100;
+    color: var(--primary-color);
 }
 .hero .info .desc {
     font-weight: 400;
@@ -217,7 +217,7 @@ a {
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
-    color: #171100;
+    color: var(--primary-color);
     margin-left: 14px;
 }
 .hero .info .recent {
@@ -236,7 +236,7 @@ a {
     font-family: "Sen";
     font-weight: 700;
     font-size: 44px;
-    color: #171100;
+    color: var(--primary-color);
     line-height: 54px;
 }
 
@@ -257,5 +257,257 @@ a {
 /* Our popular courses--------------------------------- */
 .courses {
     padding: 200px 135px;
-    background: yellowgreen;
+    /* background: yellowgreen; */
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+}
+.courses .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.courses .row1 .info .our-popular {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--primary-color);
+}
+.courses .row1 .info .desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #5f5b53;
+    width: 458px;
+    height: 60px;
+    margin-top: 16px;
+}
+.courses .row1 .action {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* row2----------------------- */
+.courses .row2 {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.courses .row2 .row2-block {
+    width: 370px;
+    height: 466px;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.courses .row2 .row2-block:nth-child(2) .end a,
+.courses .row2 .row2-block:nth-child(3) .end a {
+    background: black;
+}
+.courses .row2 .row2-block:nth-child(2),
+.courses .row2 .row2-block:nth-child(3) {
+    box-shadow: unset;
+    border: 1px solid #e2dfda;
+}
+.courses .row2 .row2-block img {
+    object-fit: cover;
+    width: 370px;
+    height: 278px;
+}
+.courses .row2 .row2-block .star-block {
+    margin: 16px 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses .row2-block .star-block h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary-color);
+}
+.courses .row2-block .star-block img {
+    width: 18px;
+    height: 18px;
+    margin: 0 6px 0 119px;
+}
+
+.courses .row2-block .star-block p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fea31b;
+}
+.courses .row2-block .desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #5f5b53;
+    margin: 6px 22px 0;
+    width: 326px;
+    height: 52px;
+}
+.courses .row2-block .end {
+    margin: 12px 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses .row2-block .end .price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #171100;
+}
+.courses .row2-block .end a {
+    width: 118px;
+    height: 50px;
+    background: #ffb900;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.peter {
+    width: 1440px;
+    height: 380px;
+    background: #2e2100;
+    margin: 200px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 135px;
+}
+
+.peter .peter-avatar-block img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.peter .peter-avatar-block .name {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #f7f7f7;
+    margin-top: 18px;
+}
+.peter .peter-avatar-block .work {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #bfbcb3;
+    margin-top: 4px;
+}
+.peter .peter-avatar-block .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffb900;
+    margin: 28px 12px 0;
+    position: relative;
+}
+
+.peter .peter-avatar-block .dot::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    top: 0;
+    background: #634700;
+}
+.peter .peter-avatar-block .dot::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    top: 0;
+    background: #634700;
+}
+.peter .cmt {
+    position: relative;
+    font-style: italic;
+    width: 740px;
+    height: 160px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+/* platform */
+.platform {
+    width: 1170px;
+    height: 438px;
+    background-color: #c0864c;
+    display: flex;
+    align-items: center;
+    margin: 200px auto 0;
+}
+
+.platform img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.platform img:first-child {
+    margin-top: auto;
+}
+.platform img:nth-child(2) {
+    margin-left: 30px;
+    margin-bottom: auto;
+}
+.platform .info {
+    margin-left: 130px;
+}
+.platform .info h2 {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #171100;
+    width: 470px;
+    height: 96px;
+    display: block;
+}
+
+.platform .info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5f5b53;
+    margin-top: 16px;
+}
+.platform .info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 50px;
+    background: #ffb900;
+    border-radius: 26px;
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
 }
