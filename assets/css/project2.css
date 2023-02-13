@@ -454,7 +454,7 @@ a {
 .platform {
     width: 1170px;
     height: 438px;
-    background-color: #c0864c;
+    /* background-color: #c0864c; */
     display: flex;
     align-items: center;
     margin: 200px auto 0;
