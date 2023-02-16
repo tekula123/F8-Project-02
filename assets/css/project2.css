@@ -16,15 +16,18 @@ a {
 }
 /* block header */
 .block-header {
-    width: 1440px;
+    width: 100wh;
     height: 900px;
-    background: #eac45c;
+    background: #fffcf4;
     margin: 0 auto;
     padding: 36px 135px 65px;
 }
 .block-header .header {
+    background: #fffcf4;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .navigation {
     margin-left: 512px;
